@@ -5,6 +5,8 @@
  * Google Maps coordinates, official PDF catalogue URL, and backend endpoints here.
  */
 
+import { mediaAssets } from './media';
+
 export const siteConfig = {
   brand: {
     name: 'RAILPOWER WIRE & CABLE',
@@ -14,20 +16,7 @@ export const siteConfig = {
     logoAlt: 'RAILPOWER WIRE & CABLE Official Logo',
   },
 
-  media: {
-    heroCopperCables: '/src/assets/images/hero_copper_cables_1794630339058.jpg',
-    qualityMachinery: '/src/assets/images/quality_cable_machinery_1794630338769.jpg',
-    houseWires: '/src/assets/images/product_house_wires_1794630339982.jpg',
-    pvcWires: '/src/assets/images/product_pvc_wires_1794630339616.jpg',
-    flexibleWires: '/src/assets/images/product_flexible_wires_1794630338938.jpg',
-    industrialCables: '/src/assets/images/product_industrial_cables_1794630339409.jpg',
-    aluminiumConductors: '/src/assets/images/product_aluminium_conductors_1794630340236.jpg',
-    powerCables: '/src/assets/images/product_power_cables_1794630340738.jpg',
-    electricalCables: '/src/assets/images/product_electrical_cables_1794630341668.jpg',
-    submersibleCables: '/src/assets/images/product_submersible_cables_1794631191367.jpg',
-    solarCables: '/src/assets/images/product_solar_cables_1794631192596.jpg',
-    weldingCables: '/src/assets/images/product_welding_cables_1794631193016.jpg',
-  },
+  media: mediaAssets,
 
   seo: {
     siteUrl: '', // Leave empty to resolve dynamically from window.location.origin, or set production domain

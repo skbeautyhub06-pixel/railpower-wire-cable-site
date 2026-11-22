@@ -85,13 +85,13 @@ export function QualityPage({ openEnquiryModal }: LayoutOutletProps) {
 
       {/* Visual Feature Split */}
       <section className="py-14 md:py-20 bg-white border-b border-neutral-200">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
             <div className="lg:col-span-7">
               <div className="aspect-16/9 lg:h-full rounded-lg overflow-hidden border border-neutral-200 bg-[#F5F5F5]">
                 <ResilientImage
-                  src={siteConfig.media.qualityMachinery}
-                  alt="Modern wire drawing and extrusion line inside electrical cable manufacturing facility"
+                  src={siteConfig.media.qualityCableTesting}
+                  alt="Electrical engineer conducting high-voltage and resistance testing on insulated power cables"
                   loading="eager"
                   className="w-full h-full object-cover"
                 />
@@ -121,6 +121,47 @@ export function QualityPage({ openEnquiryModal }: LayoutOutletProps) {
                 </button>
               </div>
             </div>
+          </div>
+
+          {/* Quality Inspection & Manufacturing Quality Control Pair */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <figure className="rounded-lg overflow-hidden border border-neutral-200 bg-white">
+              <div className="aspect-16/10 w-full overflow-hidden bg-[#F5F5F5]">
+                <ResilientImage
+                  src={siteConfig.media.qualityInspectionControl}
+                  alt="Quality control technician measuring copper conductor strand diameter and PVC insulation thickness with a digital micrometer"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption className="p-5 border-t border-neutral-200">
+                <h3 className="text-base font-bold text-[#171717]">
+                  Dimensional &amp; Insulation Inspection
+                </h3>
+                <p className="text-sm text-neutral-600 mt-1">
+                  Precision micrometer verification of conductor stranding and uniform PVC jacket
+                  thickness on sampled wire batches.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="rounded-lg overflow-hidden border border-neutral-200 bg-white">
+              <div className="aspect-16/10 w-full overflow-hidden bg-[#F5F5F5]">
+                <ResilientImage
+                  src={siteConfig.media.qualityMachinery}
+                  alt="In-line wire drawing and extrusion manufacturing quality control process"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption className="p-5 border-t border-neutral-200">
+                <h3 className="text-base font-bold text-[#171717]">
+                  In-Process Manufacturing Control
+                </h3>
+                <p className="text-sm text-neutral-600 mt-1">
+                  Monitored wire drawing, extrusion, and spooling stages engineered to maintain
+                  clean surface finish and consistent coil quality.
+                </p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

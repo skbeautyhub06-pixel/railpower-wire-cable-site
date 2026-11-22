@@ -312,7 +312,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       createVariant({
         slug: 'multi-strand-house-wire',
         name: 'Multi-Strand House Wire',
-        image: siteConfig.media.houseWires,
+        image: siteConfig.media.copperMultistrand,
         shortDescription:
           'Bunched multi-strand copper wire option designed for flexibility and reliable terminal clamping.',
         constructionInfo:
@@ -419,7 +419,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       createVariant({
         slug: 'pvc-multistrand-wires',
         name: 'PVC Multistrand Wires',
-        image: siteConfig.media.houseWires,
+        image: siteConfig.media.copperMultistrand,
         shortDescription:
           'Multi-strand PVC building wires combining ease of pulling with dependable termination.',
         constructionInfo: 'Multiple copper strands bunched uniformly under smooth PVC insulation.',
@@ -431,7 +431,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       createVariant({
         slug: 'pvc-insulated-copper-wires',
         name: 'PVC Insulated Copper Wires',
-        image: siteConfig.media.pvcWires,
+        image: siteConfig.media.copperMultistrand,
         shortDescription:
           'Copper-conductor PVC insulated wires for reliable internal power and lighting distribution.',
         constructionInfo: 'Copper conductor insulated in uniform PVC polymer compound.',

@@ -101,8 +101,9 @@ export function AboutPage({ openEnquiryModal }: LayoutOutletProps) {
             <div className="lg:col-span-6">
               <div className="aspect-16/10 lg:aspect-auto lg:h-full min-h-[280px] rounded-lg overflow-hidden border border-neutral-200 bg-[#F5F5F5]">
                 <ResilientImage
-                  src={siteConfig.media.heroCopperCables}
-                  alt="Copper electrical wires and industrial power cables in production"
+                  src={siteConfig.media.aboutManufacturingFacility}
+                  alt="Electrical wire and cable manufacturing facility with cable drums and extrusion lines"
+                  loading="eager"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -169,6 +170,58 @@ export function AboutPage({ openEnquiryModal }: LayoutOutletProps) {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industrial Operations Visual Showcase */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mb-10">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#B87333] mb-2">
+              Industrial Operations
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#171717] tracking-tight">
+              Production Machinery &amp; Supply Operations
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <figure className="rounded-lg overflow-hidden border border-neutral-200 bg-[#F5F5F5]">
+              <div className="aspect-16/9 w-full overflow-hidden">
+                <ResilientImage
+                  src={siteConfig.media.copperWireProduction}
+                  alt="Copper wire stranding and spooling production machinery in operation"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption className="p-5 bg-white border-t border-neutral-200">
+                <h3 className="text-base font-bold text-[#171717]">Copper Conductor Stranding</h3>
+                <p className="text-sm text-neutral-600 mt-1">
+                  Structured conductor drawing and stranding lines supporting consistent wire
+                  geometry across residential and industrial categories.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="rounded-lg overflow-hidden border border-neutral-200 bg-[#F5F5F5]">
+              <div className="aspect-16/9 w-full overflow-hidden">
+                <ResilientImage
+                  src={siteConfig.media.dealershipDistribution}
+                  alt="Industrial electrical cable warehouse and drum dispatch operations"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption className="p-5 bg-white border-t border-neutral-200">
+                <h3 className="text-base font-bold text-[#171717]">
+                  Inventory &amp; Dispatch Coordination
+                </h3>
+                <p className="text-sm text-neutral-600 mt-1">
+                  Organized coil packaging and drum storage designed for reliable dealer supply and
+                  project dispatch.
+                </p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

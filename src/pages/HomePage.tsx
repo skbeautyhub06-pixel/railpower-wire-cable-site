@@ -180,13 +180,29 @@ export function HomePage({ openEnquiryModal, openCatalogueModal }: LayoutOutletP
               </div>
             </div>
 
-            <div className="lg:col-span-6">
-              <div className="aspect-16/10 lg:aspect-auto lg:h-full min-h-[280px] rounded-lg overflow-hidden border border-neutral-200 bg-[#F5F5F5]">
+            <div className="lg:col-span-6 flex flex-col gap-4">
+              <div className="aspect-16/9 rounded-lg overflow-hidden border border-neutral-200 bg-[#F5F5F5]">
                 <ResilientImage
-                  src={siteConfig.media.qualityMachinery}
-                  alt="Precision wire drawing and cable manufacturing machinery in clean industrial facility"
+                  src={siteConfig.media.aboutManufacturingFacility}
+                  alt="RAILPOWER electrical wire manufacturing factory floor with cable drums and extrusion lines"
                   className="w-full h-full object-cover"
                 />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="aspect-16/10 rounded-lg overflow-hidden border border-neutral-200 bg-[#F5F5F5]">
+                  <ResilientImage
+                    src={siteConfig.media.copperWireProduction}
+                    alt="Multi-strand copper wire production on high-speed stranding and spooling machinery"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="aspect-16/10 rounded-lg overflow-hidden border border-neutral-200 bg-[#F5F5F5]">
+                  <ResilientImage
+                    src={siteConfig.media.qualityMachinery}
+                    alt="Industrial cable manufacturing extrusion and wire drawing line"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>

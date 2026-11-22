@@ -192,10 +192,10 @@ export function DealershipPage() {
       <section className="relative bg-[#171717] text-white overflow-hidden border-b border-neutral-800">
         <div className="absolute inset-0">
           <ResilientImage
-            src={siteConfig.media.heroCopperCables}
-            alt="RAILPOWER copper electrical wires and power cables"
+            src={siteConfig.media.dealershipDistribution}
+            alt="Wholesale electrical cable distribution warehouse with racked cable drums and palletized coils ready for dealer dispatch"
             loading="eager"
-            className="w-full h-full object-cover opacity-35"
+            className="w-full h-full object-cover opacity-40"
           />
           <div
             aria-hidden="true"
@@ -237,13 +237,66 @@ export function DealershipPage() {
       {/* Partnership Categories */}
       <section className="py-16 md:py-20 bg-[#F5F5F5] border-b border-neutral-200">
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mb-12">
+          <div className="max-w-2xl mb-10">
             <p className="text-xs font-bold uppercase tracking-widest text-[#B87333] mb-2">
               Trade &amp; Commercial Channels
             </p>
             <h2 className="text-2xl sm:text-4xl font-bold text-[#171717] tracking-tight">
               Partnership &amp; Enquiry Opportunities
             </h2>
+          </div>
+
+          {/* Distribution & Wholesale Operations Visual Row */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <figure className="bg-white border border-neutral-200 rounded-lg overflow-hidden">
+              <div className="aspect-16/10 w-full overflow-hidden bg-[#F5F5F5]">
+                <ResilientImage
+                  src={siteConfig.media.dealershipDistribution}
+                  alt="Electrical cable distribution warehouse with stacked cable reels and dispatch bay"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption className="p-4 border-t border-neutral-100">
+                <h3 className="text-sm font-bold text-[#171717]">Electrical Cable Distribution</h3>
+                <p className="text-xs text-neutral-600 mt-1">
+                  Structured drum storage and palletized dispatches for regional distributors.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="bg-white border border-neutral-200 rounded-lg overflow-hidden">
+              <div className="aspect-16/10 w-full overflow-hidden bg-[#F5F5F5]">
+                <ResilientImage
+                  src={siteConfig.media.copperMultistrand}
+                  alt="Wholesale copper wire coils and multistrand PVC insulated house wires"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption className="p-4 border-t border-neutral-100">
+                <h3 className="text-sm font-bold text-[#171717]">Wholesale Electrical Products</h3>
+                <p className="text-xs text-neutral-600 mt-1">
+                  Fast-moving residential, commercial, and industrial wire coils for trade counters.
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="bg-white border border-neutral-200 rounded-lg overflow-hidden">
+              <div className="aspect-16/10 w-full overflow-hidden bg-[#F5F5F5]">
+                <ResilientImage
+                  src={siteConfig.media.aboutManufacturingFacility}
+                  alt="Large-scale cable manufacturing and dealer supply operations floor"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <figcaption className="p-4 border-t border-neutral-100">
+                <h3 className="text-sm font-bold text-[#171717]">
+                  Dealer &amp; Distributor Operations
+                </h3>
+                <p className="text-xs text-neutral-600 mt-1">
+                  Direct factory-to-channel coordination for dealers, wholesalers, and bulk buyers.
+                </p>
+              </figcaption>
+            </figure>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
